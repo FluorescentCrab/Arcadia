@@ -1,39 +1,27 @@
 # Arcadia: Descend
 
-A custom 2D vector-based arcade navigation game built from scratch. Control an agile craft to descend through a series of hazardous geometric caverns while managing momentum, line-of-sight pathing, and high-velocity collision vectors.
+![Descend Title Screen](ss_/Screenshot%202026-07-02%20003128.png)
+
+A fast-paced, top-down movement game built from scratch using C++ and Raylib. Control an agile craft to navigate through geometric caverns where the stakes constantly rise.
 
 ---
 
-## 📸 Media Showcase
+## 🛠️ Core Gameplay
 
-### Title Screen
-The minimalist main entry menu introducing the core theme and aesthetic of the game:
+* **Top-Down Movement:** Precise and responsive top-down navigation mechanics. Maneuver your craft through tight corridors and navigate carefully around the environment. 
 
-![Descend Title Screen](image_26597b.png)
+![Navigation](ss_/Screenshot%202026-07-02%20003145.png)
 
-### Vector Navigation & Cavern Traversal
-Demonstrating real-time physics, boundary tracking, and pathing calculations as the player maneuvers through high-contrast geometric obstacles:
+* **Escalating Difficulty:** The game actively gets harder the further you go forward. As you advance, the environment becomes increasingly restrictive, demanding faster reaction times and perfect execution.
 
-| Obstacle Tracking & Raycasting | Edge Alignment & Stability |
-|:---:|:---:|
-| ![Cavern Traversal 1](image_26595b.png) | ![Cavern Traversal 2](image_265961.png) |
-| *(Visualizing the trailing trail mechanics and active line-of-sight vectors)* | *(Precision gliding along boundary walls with dynamic UI indicators)* |
+![Edge Alignment](ss_/Screenshot%202026-07-02%20003211.png)
 
----
-
-## 🛠️ Core Features Implemented
-
-* **Vector Physics Engine:** Implemented custom momentum, thrust, and orientation kinematics for smooth, high-precision control of the triangle craft.
-* **Dynamic Trail Generation:** Features a custom visual tracking system that leaves a fading geometric trail to map out previous flight positions.
-* **Line-of-Sight Raycasting:** Integrates real-time ray-vector intersections to determine distance to impending hazards and track vector proximity.
-* **High-Contrast Collision Matrices:** Precision collision boundaries separating dynamic travel paths (yellow vectors) from hard environmental hazards (red geometry blocks).
-* **Minimalist HUD Systems:** Compact state tracking using real-time resource indicators (health/energy bars) anchored relative to the active player position.
+* **Reverse Progression:** A unique twist on the traditional gameplay loop. Instead of simply gaining power, you must adapt to a reverse progression system as you descend deeper into the abyss, forcing you to rely purely on raw skill and adaptability.
 
 ---
 
 ## 🧰 Tech Stack
 
 * **Language:** C / C++
-* **Graphics & Audio Framework:** [Raylib](https://www.raylib.com/) 
-* **Math Operations:** Custom Linear Vector Algebra (built on top of Raymath)
+* **Graphics Framework:** [Raylib](https://www.raylib.com/) 
 * **Build System:** CMake
